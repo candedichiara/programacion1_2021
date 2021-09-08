@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+.nombres {
+    color:white
+}
+
+header {
+    display:flex;
+
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50%;
+
+    height: 200px;
+}
