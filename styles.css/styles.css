@@ -15,15 +15,14 @@ header {
 }
 
 .logo {
-    vertical-align: top;
+    width: 300px;
+    margin-left: 0,5cm;
 }
 
 .opciones {
     display:inline-block;
 
     margin-right: 50px;
-
-    
 }
 
 .hipervinculoheader {
@@ -87,12 +86,16 @@ header {
 
 .titulocomedia {
     font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
     
 }
 
 .detallescomedia{
     display: flex;
-
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .detailmovie{
@@ -129,4 +132,44 @@ header {
 .sinopsisryf{
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
+}
+
+.soncomoniños{
+    max-width: 50%;
+}
+.soncomoniñosimg{
+    max-width: 85%;
+    height: 55% ;
+    
+}
+
+.unhombreimg{
+    max-width: 85%;
+    height: 55%;
+}
+
+.comoperderaunhombre{
+    max-width: 50%;
+    
+
+}
+
+.perderaunhombreh3{
+    text-align: center;
+}
+
+.dondeestanlasrubias {
+    max-width: 50%;
+}
+
+.quepasoayer {
+    max-width: 50%;
+}
+
+
+footer{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+justify-content: flex-end;
 }
