@@ -173,3 +173,41 @@ flex-direction: column;
 min-height: 100vh;
 justify-content: flex-end;
 }
+
+.detailserie{
+    background-color: black;
+    color: rgb(253, 232, 232);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.fotopb{
+    text-align: right;
+}
+
+.tdpeakyblinders{
+    vertical-align: top;
+}
+
+.imagenpeaky{
+    width: 600px;
+    height: 700px;
+
+}
+
+.titulopeaky{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.textopeaky{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.sinopsispeaky{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}

@@ -8,26 +8,64 @@
     <title>Detalle-Serie</title>
 
     <link rel="stylesheet" href="./styles.css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body class="body peliculas">
-    
 
-    <h1>Peaky Blinders </h1>
+    <header>
+        <img src="./img/logo3.png" alt="Logo-cineapolis" class="logo">
 
-    <section>
+        <nav>
 
-        <img src="./img/peakyblinders.jpg.jpg" alt="serie peaky blinders">
+            <ul class="opciones">
 
-        <h2>Drama | 8,5/10</h2>
-        <h3>12/9/2013</h3>
-        <h4>60 minutos (5 Temporadas)</h4>
-        <p>Birmingham, año 1919.
-            El ambicioso Tommy Shelby (Cillan Murphy) lidera a los Peaky Blinders, un grupo criminal dedicado a amañar
-            apuestas hípicas.
-            El inspector policial Chester Campbell (Sam Neill) llega a Birmingham desde Belfast con el objetivo de
-            acabar con sus actividades delictivas.</p>
+                <li class="opciones">
+                    <a href="./favorite.html" class="hipervinculoheader">Favoritos</a>
+                </li>
 
+                <li class="opciones">
+                    <a href="./generos.html" class="hipervinculoheader">Géneros</a>
+                </li>
+
+            </ul>
+
+
+
+        </nav>
+
+        <form action="./resultado-busqueda.html" method="GET" class="busqueda">
+
+
+            <input type="search" name="busqueda" value="Buscar..." class="buscar">
+
+            <input type="submit" class="enviar">
+
+        </form>
+
+    </header>
+
+    <section class="detailserie">
+        <table>
+            <td class="tdpeakyblinders">
+                <h1 class="titulopeaky">Peaky Blinders </h1>
+                <h2 class="textopeaky">Drama | 8,5/10</h2>
+                <h3 class="textopeaky">12/9/2013</h3>
+                <h4 class="textopeaky">60 minutos (5 Temporadas)</h4>
+                <p class="sinopsispeaky">Birmingham, año 1919.
+                    El ambicioso Tommy Shelby (Cillan Murphy) lidera a los Peaky Blinders, un grupo criminal dedicado a
+                    amañar
+                    apuestas hípicas.
+                    El inspector policial Chester Campbell (Sam Neill) llega a Birmingham desde Belfast con el objetivo
+                    de
+                    acabar con sus actividades delictivas.</p>
+            </td>
+            <td>
+                <div class="fotopb">
+                    <img src="./img/peakyblinders3.jpg" alt="serie peaky blinders" class="imagenpeaky">
+                </div>
+            </td>
+        </table>
     </section>
 
     <footer>
