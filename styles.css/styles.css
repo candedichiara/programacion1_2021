@@ -16,15 +16,46 @@ header {
 
 .logo {
     width: 50%;
-
-    height: 200px;
+margin-top: 0cm;
+    height: 300px;
 }
 
 .opciones {
     display:inline-block;
 
-    margin-right: 15px; 
+    margin-right: 50px;
+
+    
 }
+
+.hipervinculoheader {
+
+    color: rgb(253, 232, 232);
+
+    font-family: 'Merriweather', serif;
+
+    font-size: 17px;
+
+
+}
+
+.buscar{
+    height: 30px;
+    background-color: black;
+    border-color: gray;
+    color: rgb(182, 180, 180);
+    border-width: 3px;
+    border-radius: 3px;
+}
+
+.enviar {
+    height: 22px;
+    background-color: rgb(182, 180, 180);
+    border-style: none;
+    margin-right: 0.20cm;
+    margin-left: 5px;
+}
+
 
 .generos{
     display: flex; 
@@ -50,3 +81,20 @@ header {
     background-color: black;
     color: white;
 }
+
+.bodydetallegeneros{
+    background-color: black;
+    color: rgb(253, 232, 232);
+}
+
+.titulocomedia {
+    font-size: 30px;
+    
+}
+
+.detallescomedia{
+    display: flex;
+
+}
+
+
