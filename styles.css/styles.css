@@ -15,9 +15,7 @@ header {
 }
 
 .logo {
-    width: 50%;
-margin-top: 0cm;
-    height: 300px;
+    vertical-align: top;
 }
 
 .opciones {
@@ -97,4 +95,38 @@ margin-top: 0cm;
 
 }
 
+.detailmovie{
+    background-color: black;
+    color: rgb(253, 232, 232);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    width: 100%;
+}
 
+.tdryf{
+    vertical-align: top;
+}
+
+.imagenryf{
+    width: 100%;
+}
+
+.fotoryf{
+   text-align: right;
+}
+
+.tituloryf{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+
+.textoryf{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.sinopsisryf{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
