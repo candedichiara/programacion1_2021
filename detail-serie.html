@@ -6,10 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle-Serie</title>
+
+    <link rel="stylesheet" href="./styles.css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    
+<body class="body peliculas">
+
+    <header>
+        <img src="./img/logo3.png" alt="Logo-cineapolis" class="logo">
+
+        <nav>
+
+            <ul class="opciones">
+
+                <li class="opciones">
+                    <a href="./favorite.html" class="hipervinculoheader">Favoritos</a>
+                </li>
+
+                <li class="opciones">
+                    <a href="./generos.html" class="hipervinculoheader">Géneros</a>
+                </li>
+
+            </ul>
+
+
+
+        </nav>
+
+        <form action="./resultado-busqueda.html" method="GET" class="busqueda">
+
+
+            <input type="search" name="busqueda" value="Buscar..." class="buscar">
+
+            <input type="submit" class="enviar">
+
+        </form>
+
+    </header>
+
+    <section class="detailserie">
+        <table>
+            <td class="tdpeakyblinders">
+                <h1 class="titulopeaky">Peaky Blinders </h1>
+                <h2 class="textopeaky">Drama | 8,5/10</h2>
+                <h3 class="textopeaky">12/9/2013</h3>
+                <h4 class="textopeaky">60 minutos (5 Temporadas)</h4>
+                <p class="sinopsispeaky">Birmingham, año 1919.
+                    El ambicioso Tommy Shelby (Cillan Murphy) lidera a los Peaky Blinders, un grupo criminal dedicado a
+                    amañar
+                    apuestas hípicas.
+                    El inspector policial Chester Campbell (Sam Neill) llega a Birmingham desde Belfast con el objetivo
+                    de
+                    acabar con sus actividades delictivas.</p>
+            </td>
+            <td>
+                <div class="fotopb">
+                    <img src="./img/peakyblinders3.jpg" alt="serie peaky blinders" class="imagenpeaky">
+                </div>
+            </td>
+        </table>
+    </section>
+
+    <footer>
+        <section>
+            <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
+        </section>
+
+
+    </footer>
+
 </body>
 
 </html>

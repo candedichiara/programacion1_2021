@@ -15,16 +15,44 @@ header {
 }
 
 .logo {
-    width: 50%;
-
-    height: 200px;
+    width: 300px;
+    margin-left: 0,5cm;
 }
 
 .opciones {
     display:inline-block;
 
-    margin-right: 15px; 
+    margin-right: 50px;
 }
+
+.hipervinculoheader {
+
+    color: rgb(253, 232, 232);
+
+    font-family: 'Merriweather', serif;
+
+    font-size: 17px;
+
+
+}
+
+.buscar{
+    height: 30px;
+    background-color: black;
+    border-color: gray;
+    color: rgb(182, 180, 180);
+    border-width: 3px;
+    border-radius: 3px;
+}
+
+.enviar {
+    height: 22px;
+    background-color: rgb(182, 180, 180);
+    border-style: none;
+    margin-right: 0.20cm;
+    margin-left: 5px;
+}
+
 
 .generos{
     display: flex; 
@@ -49,4 +77,137 @@ header {
 .body {
     background-color: black;
     color: white;
+}
+
+.bodydetallegeneros{
+    background-color: black;
+    color: rgb(253, 232, 232);
+}
+
+.titulocomedia {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    
+}
+
+.detallescomedia{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.detailmovie{
+    background-color: black;
+    color: rgb(253, 232, 232);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.tdryf{
+    vertical-align: top;
+}
+
+.imagenryf{
+    width: 100%;
+}
+
+.fotoryf{
+   text-align: right;
+}
+
+.tituloryf{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+
+.textoryf{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.sinopsisryf{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.soncomoniños{
+    max-width: 50%;
+}
+.soncomoniñosimg{
+    max-width: 85%;
+    height: 55% ;
+    
+}
+
+.unhombreimg{
+    max-width: 85%;
+    height: 55%;
+}
+
+.comoperderaunhombre{
+    max-width: 50%;
+    
+
+}
+
+.perderaunhombreh3{
+    text-align: center;
+}
+
+.dondeestanlasrubias {
+    max-width: 50%;
+}
+
+.quepasoayer {
+    max-width: 50%;
+}
+
+
+footer{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+justify-content: flex-end;
+}
+
+.detailserie{
+    background-color: black;
+    color: rgb(253, 232, 232);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.fotopb{
+    text-align: right;
+}
+
+.tdpeakyblinders{
+    vertical-align: top;
+}
+
+.imagenpeaky{
+    width: 600px;
+    height: 700px;
+
+}
+
+.titulopeaky{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.textopeaky{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.sinopsispeaky{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
 }
