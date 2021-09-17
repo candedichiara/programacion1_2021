@@ -103,7 +103,7 @@ header {
     color: rgb(253, 232, 232);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column; 
+    flex-direction:row; 
     width: 100%;
 }
 
