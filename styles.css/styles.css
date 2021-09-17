@@ -107,9 +107,8 @@ ul {
 
 .titulogeneros{
     font-size: 30px;
-    text-decoration: underline;
     background-color: #C40A07;
-    padding: 15px;
+    padding: 13px;
     border-radius: 20px;
     text-align: center;
 }
@@ -122,18 +121,12 @@ ul {
 }
 
 .listadegeneros li{
-    background-image: url('../img/iconopelicula3.png');
+    background-image: url('../img/iconopelicula4.png');
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 40px;
     margin-bottom: 5px;
+    font-size: 23px;
 }
-
-
-.bodydetallegeneros{
-    background-color: black;
-    color: rgb(253, 232, 232);
-}
-
 
 .detallescomedia{
     display: flex;
@@ -281,6 +274,15 @@ ul {
 .opciones{
     margin-right: 5px;
 }
+
+.detallescomedia article {
+    width: 100%;
+}
+
+.resultados a{
+    width: 100%;
+}
+
 
 
 }
