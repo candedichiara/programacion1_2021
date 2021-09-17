@@ -93,17 +93,15 @@ ul {
 
 .generos{
     display: flex; 
-    margin-top: 1cm;
-    
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .generos article{
-    display: flex;
-    flex-direction:column;
-    width: 50%;
-    margin-left: 40px;
-    margin-right: 40px;
-}
+    width: 48%;
+ }
+   
 
 .titulogeneros{
     font-size: 30px;
@@ -117,6 +115,7 @@ ul {
     
     border-color: #C40A07;
     list-style-type: none;
+    padding-left: 5px;
 
 }
 
@@ -251,10 +250,11 @@ ul {
     text-align:center
 }
 
-@media (max-width:768px){
+
+@media (max-width:420px){
     .generos article{
         width: 90%;
-        
+        margin-left: 0.5cm;
     }
 
     .generos {
@@ -282,6 +282,8 @@ ul {
 .resultados a{
     width: 100%;
 }
+
+
 
 
 
