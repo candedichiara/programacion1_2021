@@ -142,16 +142,23 @@ ul {
     width: 100%;
 }
 
+.articlemovie{
+    width:50%;
+}
+
 .tdryf{
     vertical-align: top;
 }
 
-.imagenryf{
-    width: 100%;
+.favoritosmovie{
+    background-color: #C40A07;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 22%;
 }
-
 .fotoryf{
-   text-align: right;
+  width: 50%;
 }
 
 .tituloryf{
@@ -192,20 +199,20 @@ ul {
 .detailserie{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column; 
+    flex-direction: row; 
     width: 100%;
 }
 
 .fotopb{
-    text-align: right;
+    width: 50%;
 }
 
-.tdpeakyblinders{
-    vertical-align: top;
+.articlepeakyblinders{
+    width: 50%;
 }
 
 .imagenpeaky{
-    width: 600px;
+    width: 700px;
     height: 700px;
 
 }
