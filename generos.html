@@ -11,35 +11,73 @@
 </head>
 
 <body class="body">
-    
-    <nav class="generos">
-        <select name="genero" id="" class="elegir">
-            <option value="" disabled selected hidden> Géneros de película</option>
-            <option value="accion">Acción</option>
-            <option value="Cienciaficcion">Ciencia ficción</option>
-            <option value="comedia">Comedia</option>
-            <option value="drama">Drama</option>
-            <option value="terror">Terror</option>
-        </select>
 
-        <select name="genero" id="" class="elegir">
-            <option value="" disabled selected hidden> Géneros de series</option>
-            <option value="accion">Acción</option>
-            <option value="Cienciaficcion">Ciencia ficción y fantasía</option>
-            <option value="comedia">Comedia</option>
-            <option value="drama">Drama</option>
-            <option value="terror">Terror</option>
-            <option value="docuseries">Docuseries</option>
+    <header>
+
+        <div class="contenedorlogo"><img src="./img/logo3.png" alt="Logo-cineapolis" class="logo"> </div>
         
-        </select>
+        <nav>
+    
+            <ul class="opciones">
+              
+              <li class="opciones">
+                <a href="./favorite.html" class="hipervinculoheader">Favoritos</a>
+              </li>
+  
+              <li class="opciones">
+                <a href="./generos.html" class="hipervinculoheader">Géneros</a>
+              </li>
+  
+            </ul>
+  
+            
+  
+        </nav>
+  
+        <form action="./resultado-busqueda.html" method="GET" class="busqueda">
+  
+  
+          <input type="search" name="busqueda" placeholder="Buscar..." class="buscar">
+  
+          <input type="submit" class="enviar">
+  
+          </form>
+  
+    </header>
 
-    </nav>
+    <section class="generos">
 
-    <footer>
-        <section>
-            <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
-        </section>
+        <article>
+        <h1 class="titulogeneros">Géneros de película</h1>
+        <ul class="listadegeneros">
+            <li><a href="./detail-generos.html">Acción</a></li>
+            <li><a href="./detail-generos.html">Ciencia ficción</a></li>
+            <li><a href="./detail-generos.html">Comedia</a></li>
+            <li><a href="./detail-generos.html">Drama</a></li>
+            <li><a href="./detail-generos.html">Terror</a></li>
+        </ul>
+        </article>
 
+        <article>
+            <h1 class="titulogeneros">Géneros de series</h1>
+        <ul class="listadegeneros">
+            <li><a href="./detail-generos.html">Acción</a></li>
+            <li><a href="./detail-generos.html">Ciencia ficción y fantasía</a></li>
+            <li><a href="./detail-generos.html">Comedia</a></li>
+            <li><a href="./detail-generos.html">Drama</a></li>
+            <li><a href="./detail-generos.html">Terror</a></li>
+            <li><a href="./detail-generos.html">Docuseries</a></li>
+        </ul>
+        </article>
+
+    </section>
+
+
+    <footer>   
+
+    <img src="./img/generos.png" alt="iconospelicula" class="iconos">
+
+    <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
 
     </footer>
 
