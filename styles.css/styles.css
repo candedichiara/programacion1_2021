@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     background-color: black;
     color:rgb(253, 232, 232);
@@ -27,28 +28,24 @@ footer{
     color: rgb(253, 232, 232);
     }
 
+a {
+        text-decoration: none;
+        color:rgb(253, 232, 232)
+    }
+    
+ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+
 .iconos{
     width: 600px;
     align-self: center;
-    
-    
 }
 
-.nombres{
-    text-align: center;
-   padding-top: 2px;
-}
-
-a {
-    text-decoration: none;
-    color:rgb(253, 232, 232)
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.nombres{ text-align: center; padding-top: 2px; }
 
 .logo {
     width: 300px;
@@ -58,7 +55,6 @@ ul {
 
 .opciones {
     display:inline-block;
-
     margin-right: 50px;
 }
 
@@ -93,8 +89,8 @@ ul {
 
 .generos{
     display: flex; 
-    margin-top: 15px;
     flex-wrap: wrap;
+    margin-top: 15px;
     justify-content: space-evenly;
 }
 
@@ -103,7 +99,7 @@ ul {
  }
    
 
-.titulogeneros{
+.generos h1 {
     font-size: 30px;
     background-color: #C40A07;
     padding: 13px;
