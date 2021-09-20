@@ -290,11 +290,31 @@ ul {
     width: 100%;
 }
 
+.tituloryf{
+    font-size:30px ;
+}
 
+.textoryf{
+    font-size: 20px;
+}
 
+.sinopsisryf{
+    width: 100%;
+    
+}
 
+.imagenpeaky{
+    width: 300px;
+    height: 300px;
+}
 
+.titulopeaky{
+    font-size: 30px;
+}
+
+.textopeaky{
+    font-size: 20px;
 }
 
 
-
+}
