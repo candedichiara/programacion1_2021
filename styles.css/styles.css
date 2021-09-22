@@ -211,3 +211,56 @@ justify-content: flex-end;
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
 }
+
+.Populares{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+.Populares li{
+    display: inline;
+    padding-left: 0%;
+    padding-right: 35px;
+    text-decoration: none;
+    color: white;
+}
+.Mas.visto{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+.Mas.visto  li{
+    display: inline;
+    padding-left: 0%;
+    padding-right: 15px;
+}
+.Peliculas{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+.Series{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+.Peliculas2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a img{
+    height: 20%;
+    width: 10%;
+    padding: 5px;
+}
