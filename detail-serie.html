@@ -11,11 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body peliculas">
 
     <header>
-
-        <div class="contenedorlogo"><img src="./img/logo3.png" alt="Logo-cineapolis" class="logo"> </div>
+        <img src="./img/logo3.png" alt="Logo-cineapolis" class="logo">
 
         <nav>
 
@@ -34,37 +33,25 @@
 
 
         </nav>
-  
-        <form action="./resultado-busqueda.html" method="GET">
-  
-  
-          <input type="search" name="busqueda" placeholder="Buscar..." class="buscar">
-  
-          <input type="submit" class="enviar">
-  
-          </form>
-  
-    </header>
 
-            <input type="search" name="busqueda" placeholder="Buscar..." class="buscar">
+        <form action="./resultado-busqueda.html" method="GET" class="busqueda">
+
+
+            <input type="search" name="busqueda" value="Buscar..." class="buscar">
 
             <input type="submit" class="enviar">
 
         </form>
 
     </header>
-    <main>
-        <article class="detailserie">
-            <div class="articlepeakyblinders">
+
+    <section class="detailserie">
+        <table>
+            <td class="tdpeakyblinders">
                 <h1 class="titulopeaky">Peaky Blinders </h1>
                 <h2 class="textopeaky">Drama | 8,5/10</h2>
                 <h3 class="textopeaky">12/9/2013</h3>
                 <h4 class="textopeaky">60 minutos (5 Temporadas)</h4>
-            </div>
-            <div class="fotopb">
-                <img src="./img/peakyblinders3.jpg" alt="serie peaky blinders" class="imagenpeaky">
-            </div>
-            <div>
                 <p class="sinopsispeaky">Birmingham, año 1919.
                     El ambicioso Tommy Shelby (Cillan Murphy) lidera a los Peaky Blinders, un grupo criminal dedicado a
                     amañar
@@ -72,18 +59,20 @@
                     El inspector policial Chester Campbell (Sam Neill) llega a Birmingham desde Belfast con el objetivo
                     de
                     acabar con sus actividades delictivas.</p>
-            </div>
-            <div class="favoritosmovie">
-                <a href="./favorite.html">AÑADIR A FAVORITOS</a>
-            </div>
-        </article>
-    </main>
+            </td>
+            <td>
+                <div class="fotopb">
+                    <img src="./img/peakyblinders3.jpg" alt="serie peaky blinders" class="imagenpeaky">
+                </div>
+            </td>
+        </table>
+    </section>
 
     <footer>
+        <section>
+            <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
+        </section>
 
-        <img src="./img/generos.png" alt="iconospelicula" class="iconos">
-
-        <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
 
     </footer>
 
