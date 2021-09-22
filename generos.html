@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,84 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Géneros</title>
-    <link rel="stylesheet" href="./styles.css/styles.css">
+<link rel="stylesheet" href="./styles.css/styles.css">
 </head>
 
-<body>
+<body class="body">
+    
+    <nav class="generos">
+        <select name="genero" id="" class="elegir">
+            <option value="" disabled selected hidden> Géneros de película</option>
+            <option value="accion">Acción</option>
+            <option value="Cienciaficcion">Ciencia ficción</option>
+            <option value="comedia">Comedia</option>
+            <option value="drama">Drama</option>
+            <option value="terror">Terror</option>
+        </select>
 
-    <header>
+        <select name="genero" id="" class="elegir">
+            <option value="" disabled selected hidden> Géneros de series</option>
+            <option value="accion">Acción</option>
+            <option value="Cienciaficcion">Ciencia ficción y fantasía</option>
+            <option value="comedia">Comedia</option>
+            <option value="drama">Drama</option>
+            <option value="terror">Terror</option>
+            <option value="docuseries">Docuseries</option>
+        
+        </select>
 
-        <div class="contenedorlogo">
-
-            <img src="./img/logo3.png" alt="Logo-cineapolis" class="logo">
-
-        </div>
-
-        <nav>
-
-            <ul class="opciones">
-
-                <li class="opciones">
-                    <a href="./favorite.html" class="hipervinculoheader">Favoritos</a>
-                </li>
-
-                <li class="opciones">
-                    <a href="./generos.html" class="hipervinculoheader">Géneros</a>
-                </li>
-
-            </ul>
-
-
-
-        </nav>
-
-        <form action="./resultado-busqueda.html" method="GET">
-
-
-            <input type="search" name="busqueda" placeholder="Buscar..." class="buscar">
-
-            <input type="submit" class="enviar">
-
-        </form>
-
-    </header>
-
-    <main>
-
-        <section class="generos">
-
-            <article>
-                <h1>Géneros de película</h1>
-                <ul class="listadegeneros">
-                    <li><a href="./detail-generos.html">Acción</a></li>
-                    <li><a href="./detail-generos.html">Ciencia ficción</a></li>
-                    <li><a href="./detail-generos.html">Comedia</a></li>
-                    <li><a href="./detail-generos.html">Drama</a></li>
-                    <li><a href="./detail-generos.html">Terror</a></li>
-                </ul>
-            </article>
-
-            <article>
-                <h1>Géneros de series</h1>
-                <ul class="listadegeneros">
-                    <li><a href="./detail-generos.html">Acción</a></li>
-                    <li><a href="./detail-generos.html">Ciencia ficción y fantasía</a></li>
-                    <li><a href="./detail-generos.html">Comedia</a></li>
-                    <li><a href="./detail-generos.html">Drama</a></li>
-                    <li><a href="./detail-generos.html">Terror</a></li>
-                    <li><a href="./detail-generos.html">Docuseries</a></li>
-                </ul>
-            </article>
-
-        </section>
-
-    </main>
+    </nav>
 
     <footer>
+        <section>
+            <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
+        </section>
 
-        <img src="./img/generos.png" alt="iconospelicula" class="iconos">
-
-        <p class="nombres"> Vicente Oscamou Mallea, Tomás Merlo y Candela Di Chiara </p>
 
     </footer>
 
