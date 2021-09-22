@@ -139,10 +139,6 @@ ul {
     width:50%;
 }
 
-.tdryf{
-    vertical-align: top;
-}
-
 .favoritosmovie{
     background-color: #C40A07;
     border-radius: 5px;
@@ -196,7 +192,6 @@ ul {
 .titulocomedia {
     font-size: 55px;
 }
-
 
 .detailserie{
     display: flex;
