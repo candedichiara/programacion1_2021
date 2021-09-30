@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
 .nombres {
@@ -11,7 +12,7 @@ header {
 
     flex-wrap: wrap;
 
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .logo {
@@ -29,7 +30,6 @@ header {
 
     color: rgb(253, 232, 232);
 
-    font-family: 'Merriweather', serif;
 
     font-size: 17px;
 
@@ -210,10 +210,8 @@ justify-content: flex-end;
 .sinopsispeaky{
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-<<<<<<< HEAD
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 
 .Populares{
     text-align: left;
@@ -222,8 +220,8 @@ justify-content: flex-end;
 }
 .Populares li{
     display: inline;
-    padding-left: 0%;
-    padding-right: 35px;
+    /* padding-left: 0%;
+    padding-right: 35px; */
     text-decoration: none;
     color: white;
 }
@@ -245,7 +243,7 @@ justify-content: flex-end;
     padding: 10px;
 }
 .Series{
-=======
+    color:white;
 }
 
 .Populares{
@@ -255,8 +253,8 @@ justify-content: flex-end;
 }
 .Populares li{
     display: inline;
-    padding-left: 0%;
-    padding-right: 35px;
+    /* padding-left: 0%;
+    padding-right: 35px; */
     text-decoration: none;
     color: white;
 }
@@ -271,15 +269,14 @@ justify-content: flex-end;
     padding-right: 15px;
 }
 .Peliculas{
->>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2)
+/* >>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2) */
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
     text-align: left;
     padding: 10px;
 }
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD
 .Series{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
@@ -287,7 +284,7 @@ justify-content: flex-end;
     text-align: left;
     padding: 10px;
 }
->>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2)
+/* >>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2) */
 .Peliculas2{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
@@ -300,17 +297,16 @@ a {
     color: white;
 }
 a img{
-    height: 20%;
-    width: 10%;
+    height: auto;
+    width: 60%;
     padding: 5px;
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 }
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD
+======= */
 
 
-}
->>>>>>> parent of 2338495 (final merge)
+/* }
 =======
 }
 <<<<<<< HEAD
@@ -327,6 +323,74 @@ a img{
 }
 >>>>>>> parent of 12daece (Merge branch 'Vicente' into Vicente2)
 =======
->>>>>>> parent of 79836fe (final push)
-=======
->>>>>>> parent of 79836fe (final push)
+>>>>>>> parent of 79836fe (final push) */
+.Opciones1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Opciones1 div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+
+}
+.Opciones1 div li a p{
+    display:inline-block;
+    text-align: center;
+
+}
+
+.Opciones1 div li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.Opciones1 div i {
+    border-radius: 50%; 
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+.Opciones1 div i.favorita{
+    background-color: yellow;
+    color: black;
+}
+
+.favoritos-container h2{
+    color: white;
+}
+
+/* breakpoint para tablet */
+@media (max-width: 750px){
+    .Opciones1 div{
+        width: 45%;
+    }
+}
+
+
+/* breakpoint para tablet chicas y mobile */
+@media (max-width: 500px){
+    .Opciones1 div{
+        width: 75%;
+    }
+
+    .Opciones1{
+        /* flex-direction: column; */
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .Peliculas {
+        text-align: center;
+    }
+}
