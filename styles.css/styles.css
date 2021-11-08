@@ -17,7 +17,7 @@ header {
 
     flex-wrap: wrap;
 
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer{
@@ -62,7 +62,6 @@ ul {
 
     color: rgb(253, 232, 232);
 
-    font-family: 'Merriweather', serif;
 
     font-size: 17px;
 
@@ -257,6 +256,7 @@ ul {
     display: none;
     text-align:center
 }
+/* <<<<<<< HEAD */
 
 .Populares{
     text-align: left;
@@ -265,8 +265,8 @@ ul {
 }
 .Populares li{
     display: inline;
-    padding-left: 0%;
-    padding-right: 35px;
+    /* padding-left: 0%;
+    padding-right: 35px; */
     text-decoration: none;
     color: white;
 }
@@ -288,12 +288,48 @@ ul {
     padding: 10px;
 }
 .Series{
+    color:white;
+}
+
+.Populares{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+.Populares li{
+    display: inline;
+    /* padding-left: 0%;
+    padding-right: 35px; */
+    text-decoration: none;
+    color: white;
+}
+.Mas.visto{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+.Mas.visto  li{
+    display: inline;
+    padding-left: 0%;
+    padding-right: 15px;
+}
+.Peliculas{
+/* >>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2) */
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
     text-align: left;
     padding: 10px;
 }
+/* <<<<<<< HEAD
+.Series{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+/* >>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2) */
 .Peliculas2{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
@@ -306,6 +342,99 @@ a img{
     height: 30%;
     width: 17%;
     padding: 5px;
+/* <<<<<<< HEAD */
+}
+/* <<<<<<< HEAD
+======= */
+
+
+/* }
+=======
+}
+<<<<<<< HEAD
+>>>>>>> parent of ec264de (Merge pull request #5 from candedichiara/Vicente2)
+=======
+
+
+}
+<<<<<<< HEAD
+>>>>>>> parent of 12daece (Merge branch 'Vicente' into Vicente2)
+=======
+
+
+}
+>>>>>>> parent of 12daece (Merge branch 'Vicente' into Vicente2)
+=======
+>>>>>>> parent of 79836fe (final push) */
+.Opciones1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Opciones1 div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+
+}
+.Opciones1 div li a p{
+    display:inline-block;
+    text-align: center;
+
+}
+
+.Opciones1 div li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.Opciones1 div i {
+    border-radius: 50%; 
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+.Opciones1 div i.favorita{
+    background-color: yellow;
+    color: black;
+}
+
+.favoritos-container h2{
+    color: white;
+}
+
+/* breakpoint para tablet */
+@media (max-width: 750px){
+    .Opciones1 div{
+        width: 45%;
+    }
+}
+
+
+/* breakpoint para tablet chicas y mobile */
+@media (max-width: 500px){
+    .Opciones1 div{
+        width: 75%;
+    }
+
+    .Opciones1{
+        /* flex-direction: column; */
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .Peliculas {
+        text-align: center;
+    }
 }
 
 
