@@ -106,13 +106,27 @@ ul {
     text-align: center;
 }
 
- .listadegeneros {
+ .listaGenerosPeliculas {
     border-color: #C40A07;
     list-style-type: none;
     padding-left: 5px;
 }
 
-.listadegeneros li{
+.listaGenerosSeries {
+    border-color: #C40A07;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.listaGenerosPeliculas li{
+    background-image: url('../img/iconopelicula4.png');
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+
+.listaGenerosSeries li{
     background-image: url('../img/iconopelicula4.png');
     background-repeat: no-repeat;
     padding-left: 40px;
