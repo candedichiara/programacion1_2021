@@ -134,7 +134,7 @@ ul {
     font-size: 23px;
 }
 
-.detallescomedia{
+.detallesGenero{
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
@@ -185,16 +185,16 @@ ul {
 }
 
 
-.detallescomedia article {
+.detallesGenero article {
     width: 50%;
 }
 
-.detallescomedia h3{
+.listaGenero h3{
     text-align: center;
     font-style: italic;
 }
 
-.detallescomedia img {
+.detallesGenero img {
     display: block;
     margin: auto;
     height: 85%;
@@ -202,8 +202,13 @@ ul {
     margin-bottom: 2cm;
 }
 
-.titulocomedia {
-    font-size: 55px;
+.detallesGenero p{
+    text-align: center;
+    font-style: italic;
+}
+
+.tituloGenero {
+    font-size: 35px;
 }
 
 .detailserie{
