@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
                 console.log(data.genres[i]);
 
                 generosPeliculas.innerHTML += `
-                <li><a href="detail-generos.html?id=${data.genres[i].id}&name=${data.genres[i].name}"> 
+                <li><a href="detail-generos.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=movies"> 
                 
                 ${data.genres[i].name}
                 
@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
                 console.log(data.genres[i]);
 
                 generosSeries.innerHTML += `
-                <li><a href="detail-generos.html?id=${data.genres[i].id}"> 
+                <li><a href="detail-generos.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=series"> 
                 
                 ${data.genres[i].name}
                 
