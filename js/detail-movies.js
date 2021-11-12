@@ -35,7 +35,40 @@ window.addEventListener("load", function () {
 
         })
 
-    let favoritos = document.querySelector(".favoritosmovie");
-    favoritos.innerHTML +=
-        `<a href="./favorite.html">AÑADIR A FAVORITOS</a>`
+    let listaFavoritos = []
+
+    let recuperoStorage = localStorage.getItem("favoritoslocal");
+    console.log(recuperoStorage);
+
+    if (recuperoStorage && recuperoStorage != null) {
+        listaFavoritos = JSON.parse(recuperoStorage)
+    }
+
+    let favoritosmovie = document.querySelector(".favoritosmovie");
+
+    if (listaFavoritos.includes(id)) {
+        favoritosmovie.innerHTML = `
+        QUITAR DE FAVORITOS`
+    }
+    favoritosmovie.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (listaFavoritos.includes(id)) {
+
+            let aBorrar = listaFavoritos.indexOf(id);
+            listaFavoritos.splice(aBorrar, 1);
+            favoritosmovie.innerHTML = `
+            AGREGAR A FAVORITOS`
+        }
+        else{
+            
+            listaFavoritos.push(id);
+            favoritosmovie.innerHTML = `
+            QUITAR DE FAVORITOS`
+        }
+
+        let favStorage = JSON.stringify(listaFavoritos);
+        localStorage.setItem("favoritoslocal",favStorage);
+});
 })
+

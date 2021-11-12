@@ -1,84 +1,109 @@
 
+/*
+Listado de gifs favoritos
+*/
+
+// se define "favoritos" como array vacío
+// por si no se creó aun en storage
+let favoritos = [];
+
+// si fue creada la clave "favoritos" en localStorage
+if (localStorage.getItem("favoritoslocal")) {
+
+  // verifica cómo las propiedades llegan como strings
+  console.log(localStorage);
+
+  // guarda datos del storage...
+  let recuperoStorage = localStorage.getItem("favoritoslocal");
+
+  // y los asigna a la variable "favoritos"
+  // transformados en array
+  favoritos = JSON.parse(recuperoStorage);
+
+  // verifica en consola la transformación a array
+  console.log(favoritos);
+
+}
 
 
-// selecciona btn favoritos
-    
-const fav = document.querySelector(".fav");
+// Contenedor de la lista de favoritos
+const seccion = document.querySelector("section");
 
-    // Paso 1: definir array para guardar lista de favoritos.
-    
-    
-let afavoritos = [];
 
-    // Paso 2: recuperamos datos del storage para ver si ya hay favoritos
-    
-    // puede pasar que la posición favoritos aún no exista,
-    // para ese caso definimos en el "paso 1" la variable favoritos.
 
-    // Paso 3: 
-    // si Ya se definió la propiedad "favoritos" en storage
-    // y si YA hay elementos dentro de localStorege
-    if ( x ) {
+// si NO hay favs en la lista
+if (favoritos.length == 0) {
 
-        // Paso 4: ... transformamos ese string en array
-        // y le asignamos ese array a la variable "favoritos"
-        
-      }
-  
-      // Paso 5: Si el ID del gif actual está en la lista.
-      if ( x ) {
-  
-        // Se cambia el contenido del link favoritos.
-        
-      }
-  
-      /*
-      hasta aquí, instrucciones para cuando
-      se llega a la página
-  
-      a partir del paso 6, las instrucciones
-      para cuando se cliquea en el link
-      */
-  
-  
-      /*
-      Paso 6: Agregar/sacar gif actual a favoritos
-      */
-  
-      // evento: cuando se cliquee en el link fav
-      
-        
-        // evitamos el comportamiento default del link
-        
-        
-        // Si el gif actual está en la lista
-        if ( x ) {
-            
-          // lo localizamos en el array
-          
-          // y lo sacamos de alli
-          
-            
-          // luego --> cambiamos el contenido de link fav
-          
-            
-          // chequeamos en consola si funciona
-          
-            
-        } else { //Si no está en la lista,
-            
-          // Se agrega el gif actual
-          
-            
-          // luego --> se cambia el contenido del link fav
-          
-        }
-  
-  
-        // Paso 7.a: se guarda el array actualizado como string
-        
-        
-        // Paso 7.b: se guarda ese string en localStorage
-        
-        
-        // se verifica en consola como quedó todo
+  // muestra leyenda apropiada en un "article"
+  // y un botón "volver"
+  seccion.innerHTML += `
+  <article>
+  <h3> No hay favoritos en tu lista </h3>
+  </article> 
+  `
+
+} else { // Si SI hay favoritos en el array "favoritos"
+
+  /*
+  busca cada uno de los gifs y los imprime en pantalla
+  */
+  for (let i = 0; i < favoritos.length; i++) {
+    /*
+    Para mayor prolijidad
+    se define una función que lo haga
+    y se ejecuta dentro del bucle "for", para cada fav.
+    (la función será definida después)
+    */
+    buscarYMostrarFavoritos(favoritos[i]);
+
+  }
+
+  // muestra un botón "volver" en la sección
+
+}
+
+/*
+definición de la función mostrar los gif favoritos
+(se ejecuta dentro del bucle for. más arriba)
+*/
+
+// el parámetro de la función se usará para traer info del gif en cada endpoint
+function buscarYMostrarFavoritos(id) {
+
+  // se guarda endpoint en variable "url"
+  // para que el pedido al servidor quede más claro
+  let url = `https://api.themoviedb.org/3/movie/${id}?api_key=583130cf3b1ec0008be028545f8f0cff&language=en-US`
+
+  // pedido al servidor
+  fetch(url)
+    .then(function (respuesta) {
+
+      // cuando llega la respuesta
+      // se transforma en datos "manejables"
+      return respuesta.json();
+
+    })
+    .then(function (datos) {
+      console.log(datos)
+      // cuando transformó los datos,
+      // guarda la parte que nos sirve en variable "info"...
+      let info = datos.data
+      // y la muestra en consola para verificar
+
+
+      // agrega a la sección lista
+      // cada gif favorito en un article con:
+      // h3 con título del gif que sea vínculo a la página de detalles del mismo
+      // img del gif y atributo alt con el nombre
+seccion.innerHTML += `
+<li>
+<img src="https://image.tmdb.org/t/p/w500${datos.poster_path}">
+<h3> ${datos.title}</h3>
+</li>`
+
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+}
