@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
 
         })
 
-    let favoritos = []
+    let listaFavoritos = []
 
     let recuperoStorage = localStorage.getItem("favoritoslocal");
     console.log(recuperoStorage);
@@ -48,8 +48,7 @@ window.addEventListener("load", function () {
 
     if (listaFavoritos.includes(id)) {
         favoritosmovie.innerHTML = `
-        QUITAR DE FAVORITOS 
-        <span class="material-icons">favorite</span>`
+        QUITAR DE FAVORITOS`
     }
     favoritosmovie.addEventListener("click", function (e) {
         e.preventDefault();
@@ -59,14 +58,13 @@ window.addEventListener("load", function () {
             let aBorrar = listaFavoritos.indexOf(id);
             listaFavoritos.splice(aBorrar, 1);
             favoritosmovie.innerHTML = `
-            AGREGAR A FAVORITOS
-            <span class="material-icons">favorite_border</span>`
+            AGREGAR A FAVORITOS`
         }
         else{
+            
             listaFavoritos.push(id);
             favoritosmovie.innerHTML = `
-            QUITAR DE FAVORITOS 
-            <span class="material-icons">favorite</span>`
+            QUITAR DE FAVORITOS`
         }
 
         let favStorage = JSON.stringify(listaFavoritos);

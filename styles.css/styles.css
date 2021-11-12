@@ -210,26 +210,6 @@ ul {
 .tituloGenero {
     font-size: 35px;
 }
-.material-icons {
-    padding-right: .25em;
-}
-
-#paraFavoritos {
-    display: flex;
-    gap: 15px;
-}
-#paraFavoritos > a {
-    width: calc(50% - 8px);
-    display: flex;
-    flex-direction: unset;
-}
-
-#paraFavoritos > a span.material-icons {
-    display: unset;
-    padding: 0;
-}
-
-
 
 .detailserie{
     display: flex;
