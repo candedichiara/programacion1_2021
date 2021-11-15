@@ -23,9 +23,9 @@ window.addEventListener("load", function () {
             else{
                 for (let i = 0; i <5; i++) {
 
-                    resultadoBusqueda.innerHTML += `<h2> ${data.results[i].title} </h2>
+                    resultadoBusqueda.innerHTML += `
                     <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
-                    
+                    <h3> ${data.results[i].title} </h3>
                     <p>Fecha de estreno: ${data.results[i].release_date} </p>
                     </a>
                 </li>`
@@ -57,9 +57,9 @@ window.addEventListener("load", function () {
             else{
                 for (let i = 0; i <5; i++) {
 
-                    resultadoSerie.innerHTML += `<h2> ${data.results[i].name} </h2>
+                    resultadoSerie.innerHTML += `
                     <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
-                    
+                    <h3> ${data.results[i].name} </h3>
                     <p>Fecha de estreno: ${data.results[i].first_air_date} </p>
                     </a>
                 </li>`

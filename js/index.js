@@ -9,8 +9,8 @@ window.addEventListener("load", function () {
             let peliculasPopulares = document.querySelector(".peliculasPopulares")
             for (let i = 0; i < 5; i++) {
 
-                peliculasPopulares.innerHTML += `<h3> ${data.results[i].title} </h3>
-                <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
+                peliculasPopulares.innerHTML += `
+                <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}">  <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}"> <h3> ${data.results[i].title} </h3>
                 
                 <p>Fecha de estreno: ${data.results[i].release_date} </p>
                 </a>
@@ -34,8 +34,10 @@ window.addEventListener("load", function () {
             let seriesPopulares = document.querySelector(".seriesPopulares")
             for (let i = 0; i < 5; i++) {
 
-                seriesPopulares.innerHTML += `<h3> ${data.results[i].name} </h3>
+                seriesPopulares.innerHTML += `
             <li class="elemento"><a href="detail-serie.html?id=${data.results[i].id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
+
+            <h3> ${data.results[i].name} </h3>
             
             <p>Fecha de estreno: ${data.results[i].first_air_date} </p>
             </a>
@@ -59,8 +61,10 @@ window.addEventListener("load", function () {
             let pelisValoradas = document.querySelector(".pelisValoradas")
             for (let i = 0; i < 5; i++) {
 
-                pelisValoradas.innerHTML += `<h3> ${data.results[i].title} </h3>
+                pelisValoradas.innerHTML += `
             <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
+
+            <h3> ${data.results[i].title} </h3>
             
             <p>Fecha de estreno:${data.results[i].release_date} </p>
             </a>
@@ -84,8 +88,10 @@ window.addEventListener("load", function () {
             let seriesValoradas = document.querySelector(".seriesValoradas")
             for (let i = 0; i < 5; i++) {
 
-                seriesValoradas.innerHTML += `<h3> ${data.results[i].name} </h3>
+                seriesValoradas.innerHTML += `
                 <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}">
+
+                <h3> ${data.results[i].name} </h3>
                 
                 <p>Fecha de estreno:${data.results[i].first_air_date} </p>
                 </a>
