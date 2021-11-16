@@ -134,12 +134,7 @@ ul {
     font-size: 23px;
 }
 
-.detallesGenero{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    justify-content: space-between;
-}
+
 
 .detailmovie{
     display: flex;
@@ -171,7 +166,7 @@ ul {
 }
 .tituloryf{
     font-size: 60px;
-    margin-left: 20px;
+    margin-left: 20px
 }
 
 .textoryf{
@@ -185,30 +180,14 @@ ul {
 }
 
 
-.detallesGenero article {
-    width: 50%;
-}
 
 .listaGenero h3{
     text-align: center;
     font-style: italic;
 }
 
-.detallesGenero img {
-    display: block;
-    margin: auto;
-    height: 85%;
-    width: 65%;
-    margin-bottom: 2cm;
-}
-
-.detallesGenero p{
-    text-align: center;
-    font-style: italic;
-}
-
 .tituloGenero {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .detailserie{
@@ -428,29 +407,80 @@ a img{
     color: white;
 }
 
+.peliculasPopulares{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.seriesPopulares{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.pelisValoradas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;    
+}
+
+.seriesValoradas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.elemento{
+    height: 500px;
+    width:18%;
+    margin:10px;
+}
+
+.destacar{
+    height: 350px;
+    width:100%;
+
+}
+
+.listaGenero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.elemento p{
+    text-align: center;
+}
+
+.elemento h3{
+    text-align: center;
+}
+.resultadoBusqueda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.resultadoSerie{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
 /* breakpoint para tablet */
-@media (max-width: 750px){
+@media (max-width: 768px){
     .Opciones1 div{
         width: 45%;
     }
-}
 
+    .elemento{
+        width: 45%;
 
-/* breakpoint para tablet chicas y mobile */
-@media (max-width: 500px){
-    .Opciones1 div{
-        width: 75%;
-    }
-
-    .Opciones1{
-        /* flex-direction: column; */
-        align-items: center;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    .Peliculas {
-        text-align: center;
     }
 }
 
@@ -532,6 +562,12 @@ a img{
     font-size: 20px;
     width: 100%;
 }
+
+.elemento{
+    width: 80%;
+   
+}
+
 
 
 }
