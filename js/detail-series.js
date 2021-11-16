@@ -13,7 +13,7 @@ window.addEventListener("load",function(){
     let generos = response.genres
     console.log (response.genres)
     article.innerHTML +=`
-    <h1 class="titulopeaky">${response.title}</h1>
+    <h1 class="titulopeaky">${response.name}</h1>
     <h3 class="textopeaky">${response.vote_average}/10</h3>`
 
 
@@ -21,8 +21,8 @@ window.addEventListener("load",function(){
         article.innerHTML += `<h2 class="textopeaky">${genero.name}</h2>`
     });
     article.innerHTML+=
-    `<h3 class="textopeaky">${response.release_date}</h3>
-    <h4 class="textopeaky">${response.runtime}mins</h4>`
+    `<h3 class="textopeaky">${response.first_air_date}</h3>
+    <h4 class="textopeaky">${response.episode_run_time}mins</h4>`
 
     let imagenes = document.querySelector(".fotopb")
 imagenes.innerHTML +=
