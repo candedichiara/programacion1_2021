@@ -472,6 +472,13 @@ a img{
     justify-content: space-evenly;
 }
 
+.Opciones1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
 /* breakpoint para tablet */
 @media (max-width: 768px){
     .Opciones1 div{
