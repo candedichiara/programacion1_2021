@@ -48,8 +48,9 @@ ul {
 .nombres{ text-align: center; padding-top: 2px; }
 
 .logo {
+    height: 100%;
     width: 300px;
-    margin-left: 0,5cm;
+    margin-right: 1cm;
 }
 
 
