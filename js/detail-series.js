@@ -18,7 +18,7 @@ window.addEventListener("load",function(){
 
 
     generos.forEach(genero => {
-        article.innerHTML += `<h2 class="textopeaky">${genero.name}</h2>`
+        article.innerHTML += `<h2 class="textopeaky"><a href="detail-generos.html?id=${genero.id}&name=${genero.name}">${genero.name}</a></h2>`
     });
     article.innerHTML+=
     `<h3 class="textopeaky">${response.first_air_date}</h3>
@@ -26,7 +26,7 @@ window.addEventListener("load",function(){
 
     let imagenes = document.querySelector(".fotopb")
 imagenes.innerHTML +=
-    `<img class="fotopb" src="https://api.themoviedb.org/3/tv/${response.poster_path}/images?api_key=583130cf3b1ec0008be028545f8f0cff&language=en-US">`
+    `<img class="imagenpb" src="https://image.tmdb.org/t/p/w500/${response.poster_path}">`
 
     console.log(response)
 let parrafo = document.querySelector(".sinopsispeaky")
