@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
 
 
             generos.forEach(genero => {
-                article.innerHTML += `<h2 class="textoryf">${genero.name}</h2>`
+                article.innerHTML += `<h2 class="textoryf"><a href="detail-generos.html?id=${genero.id}&name=${genero.name}&type=movies">${genero.name}</a></h2>`
             });
             article.innerHTML +=
                 `<h3 class="textoryf">${response.release_date}</h3>
