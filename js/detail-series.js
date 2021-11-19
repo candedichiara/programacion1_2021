@@ -26,7 +26,7 @@ window.addEventListener("load",function(){
 
     let imagenes = document.querySelector(".fotopb")
 imagenes.innerHTML +=
-    `<img class="imagenpb" src="https://image.tmdb.org/t/p/w500/${response.poster_path}">`
+    `<img class="imagenpb" src="https://image.tmdb.org/t/p/w400/${response.poster_path}">`
 
     console.log(response)
 let parrafo = document.querySelector(".sinopsispeaky")
