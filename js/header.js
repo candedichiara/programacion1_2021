@@ -5,8 +5,12 @@ let buscar=document.querySelector(".buscar")
 
 formulario.addEventListener("submit",function(event){
     event.preventDefault()
-    if(buscar.value.length<3){
-        alert("La busqueda debe tener al menos 3 caracteres")
+    if(buscar.value==""){
+        alert("No has ingresado ningun termino")
+    }
+
+    else if( buscar.value.length<3){
+        alert ("Debes ingresar al menos 3 caracteres")
     }
     else{
         this.submit()
