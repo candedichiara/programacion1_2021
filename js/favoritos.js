@@ -96,8 +96,8 @@ function buscarYMostrarFavoritos(id) {
       // h3 con título del gif que sea vínculo a la página de detalles del mismo
       // img del gif y atributo alt con el nombre
 seccion.innerHTML += `
-<li class= "elemento">
-<img src="https://image.tmdb.org/t/p/w500${datos.poster_path}">
+<li class="elemento">
+<a href="detail-movie.html?id=${datos.id}"> <img class="destacar" src="https://image.tmdb.org/t/p/w500${datos.poster_path}">
 <h3> ${datos.title}</h3>
 </li>`
 

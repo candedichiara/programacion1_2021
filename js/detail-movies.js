@@ -60,15 +60,15 @@ window.addEventListener("load", function () {
             favoritosmovie.innerHTML = `
             AGREGAR A FAVORITOS`
         }
-        else{
-            
+        else {
+
             listaFavoritos.push(id);
             favoritosmovie.innerHTML = `
             QUITAR DE FAVORITOS`
         }
 
         let favStorage = JSON.stringify(listaFavoritos);
-        localStorage.setItem("favoritoslocal",favStorage);
-});
+        localStorage.setItem("favoritoslocal", favStorage);
+    });
 })
 
