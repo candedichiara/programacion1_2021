@@ -1,12 +1,17 @@
 window.addEventListener("load", function () {
     //Fetch de peliculas populares 
+
     fetch("https://api.themoviedb.org/3/movie/popular?api_key=032a1cc5e170bb64ead032809385412a&language=en-US&page=1")
+
         .then(function (response) {
             return response.json()
         })
+
         .then(function (data) {
             console.log(data)
+
             let peliculasPopulares = document.querySelector(".peliculasPopulares")
+            
             for (let i = 0; i < 5; i++) {
 
                 peliculasPopulares.innerHTML += `

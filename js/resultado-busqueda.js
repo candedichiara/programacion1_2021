@@ -77,7 +77,8 @@ window.addEventListener("load", function () {
         )
     
 
-
+ let carga=document.getElementById("1")
+ carga.innerHTML=""
 
 
 })
