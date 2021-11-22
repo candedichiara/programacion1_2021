@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
             </li>`
 
             }
-            console.log(generosPeliculas)
+    
         })
         .catch(function (error) {
             console.log(error)
