@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
 
     let listaFavoritos = []
 
-    let recuperoStorage = localStorage.getItem("favoritoslocal");
+    let recuperoStorage = localStorage.getItem("favoritosmovie");
     console.log(recuperoStorage);
 
     if (recuperoStorage && recuperoStorage != null) {
@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
         }
 
         let favStorage = JSON.stringify(listaFavoritos);
-        localStorage.setItem("favoritoslocal", favStorage);
+        localStorage.setItem("favoritosmovie", favStorage);
     });
 })
 
