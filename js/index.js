@@ -8,15 +8,16 @@ window.addEventListener("load", function () {
         })
 
         .then(function (data) {
-            console.log(data)
-
+           
             let peliculasPopulares = document.querySelector(".peliculasPopulares")
             
             for (let i = 0; i < 5; i++) {
 
                 peliculasPopulares.innerHTML += `
-                <li class="elemento"><a href="detail-movie.html?id=${data.results[i].id}">  <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}"> <h3> ${data.results[i].title} </h3>
-                
+                <li class="elemento">
+                <a href="detail-movie.html?id=${data.results[i].id}">  
+                <img class="destacar" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}"> 
+                <h3> ${data.results[i].title} </h3>
                 <p>Fecha de estreno: ${data.results[i].release_date} </p>
                 </a>
             </li>`
@@ -35,7 +36,7 @@ window.addEventListener("load", function () {
             return response.json()
         })
         .then(function (data) {
-            console.log(data)
+            
             let seriesPopulares = document.querySelector(".seriesPopulares")
             for (let i = 0; i < 5; i++) {
 
@@ -62,7 +63,7 @@ window.addEventListener("load", function () {
             return response.json()
         })
         .then(function (data) {
-            console.log(data)
+            
             let pelisValoradas = document.querySelector(".pelisValoradas")
             for (let i = 0; i < 5; i++) {
 
@@ -89,7 +90,7 @@ window.addEventListener("load", function () {
             return response.json()
         })
         .then(function (data) {
-            console.log(data)
+            
             let seriesValoradas = document.querySelector(".seriesValoradas")
             for (let i = 0; i < 5; i++) {
 
